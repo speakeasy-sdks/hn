@@ -1,0 +1,17 @@
+<!-- Start SDK Example Usage -->
+```python
+import test
+from test.models import operations
+
+s = test.Test()
+
+req = operations.GetItemRequest(
+    item_id=548814,
+)
+
+res = s.stories.get_item(req)
+
+if res.story is not None:
+    # handle response
+```
+<!-- End SDK Example Usage -->
