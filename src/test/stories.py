@@ -2,7 +2,7 @@
 
 from .sdkconfiguration import SDKConfiguration
 from test import utils
-from test.models import operations, shared
+from test.models import errors, operations, shared
 from typing import Optional
 
 class Stories:
@@ -34,6 +34,8 @@ class Stories:
             if utils.match_content_type(content_type, 'application/json; charset=utf-8'):
                 out = utils.unmarshal_json(http_res.text, Optional[shared.Story])
                 res.story = out
+            else:
+                raise errors.SDKError(f'unknown content-type received: {content_type}', http_res.status_code, http_res.text, http_res)
 
         return res
 
@@ -60,6 +62,8 @@ class Stories:
             if utils.match_content_type(content_type, 'application/json'):
                 out = utils.unmarshal_json(http_res.text, Optional[list[int]])
                 res.get_stories_200_application_json_integers = out
+            else:
+                raise errors.SDKError(f'unknown content-type received: {content_type}', http_res.status_code, http_res.text, http_res)
 
         return res
 

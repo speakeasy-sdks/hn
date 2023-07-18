@@ -2,7 +2,7 @@
 
 from .sdkconfiguration import SDKConfiguration
 from test import utils
-from test.models import operations, shared
+from test.models import errors, operations, shared
 from typing import Optional
 
 class Users:
@@ -34,6 +34,8 @@ class Users:
             if utils.match_content_type(content_type, 'application/json; charset=utf-8'):
                 out = utils.unmarshal_json(http_res.text, Optional[shared.User])
                 res.user = out
+            else:
+                raise errors.SDKError(f'unknown content-type received: {content_type}', http_res.status_code, http_res.text, http_res)
 
         return res
 

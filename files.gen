@@ -6,6 +6,7 @@ pylintrc
 setup.py
 src/test/__init__.py
 src/test/models/__init__.py
+src/test/models/errors/sdkerror.py
 src/test/utils/__init__.py
 src/test/utils/retries.py
 src/test/utils/utils.py
@@ -16,6 +17,7 @@ src/test/models/operations/__init__.py
 src/test/models/shared/story.py
 src/test/models/shared/user.py
 src/test/models/shared/__init__.py
+src/test/models/errors/__init__.py
 docs/sdks/test/README.md
 docs/sdks/stories/README.md
 docs/sdks/users/README.md
