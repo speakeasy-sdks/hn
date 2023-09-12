@@ -1,7 +1,5 @@
 # Story
 
-Successful operation
-
 
 ## Fields
 

@@ -11,7 +11,6 @@ from typing import Optional
 
 @dataclasses.dataclass
 class User:
-    r"""Successful operation"""
     about: Optional[str] = dataclasses.field(default=None, metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('about'), 'exclude': lambda f: f is None }})
     created: Optional[str] = dataclasses.field(default=None, metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('created'), 'exclude': lambda f: f is None }})
     delay: Optional[str] = dataclasses.field(default=None, metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('delay'), 'exclude': lambda f: f is None }})

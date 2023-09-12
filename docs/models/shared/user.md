@@ -1,7 +1,5 @@
 # User
 
-Successful operation
-
 
 ## Fields
 
