@@ -33,12 +33,12 @@ if res.story is not None:
 ## Available Resources and Operations
 
 
-### [stories](docs/sdks/stories/README.md)
+### [Stories](docs/sdks/stories/README.md)
 
 * [get_item](docs/sdks/stories/README.md#get_item) - Get User Details
 * [get_stories](docs/sdks/stories/README.md#get_stories) - Get latest story IDs
 
-### [users](docs/sdks/users/README.md)
+### [Users](docs/sdks/users/README.md)
 
 * [get_user](docs/sdks/users/README.md#get_user) - Get User Details
 <!-- End SDK Available Operations -->
