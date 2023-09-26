@@ -18,9 +18,6 @@ src/test/models/shared/story.py
 src/test/models/shared/user.py
 src/test/models/shared/__init__.py
 src/test/models/errors/__init__.py
-docs/sdks/test/README.md
-docs/sdks/stories/README.md
-docs/sdks/users/README.md
 USAGE.md
 docs/models/operations/getitemrequest.md
 docs/models/operations/getitemresponse.md
@@ -29,4 +26,7 @@ docs/models/operations/getuserrequest.md
 docs/models/operations/getuserresponse.md
 docs/models/shared/story.md
 docs/models/shared/user.md
+docs/sdks/test/README.md
+docs/sdks/stories/README.md
+docs/sdks/users/README.md
 .gitattributes

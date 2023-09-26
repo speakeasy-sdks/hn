@@ -17,7 +17,7 @@ from test.models import operations
 s = test.Test()
 
 req = operations.GetUserRequest(
-    id=715190,
+    id=844266,
 )
 
 res = s.users.get_user(req)
