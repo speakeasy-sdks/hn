@@ -1,4 +1,5 @@
 # Stories
+(*stories*)
 
 ### Available Operations
 
