@@ -17,7 +17,7 @@ from test.models import operations
 s = test.Test()
 
 req = operations.GetItemRequest(
-    item_id=592845,
+    item_id=454948,
 )
 
 res = s.stories.get_item(req)
