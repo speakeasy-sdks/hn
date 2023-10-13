@@ -24,6 +24,7 @@ res = s.stories.get_item(req)
 
 if res.story is not None:
     # handle response
+    pass
 ```
 <!-- End SDK Example Usage -->
 

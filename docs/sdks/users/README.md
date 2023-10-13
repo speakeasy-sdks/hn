@@ -25,6 +25,7 @@ res = s.users.get_user(req)
 
 if res.user is not None:
     # handle response
+    pass
 ```
 
 ### Parameters

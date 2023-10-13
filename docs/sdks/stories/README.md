@@ -26,6 +26,7 @@ res = s.stories.get_item(req)
 
 if res.story is not None:
     # handle response
+    pass
 ```
 
 ### Parameters
@@ -57,6 +58,7 @@ res = s.stories.get_stories()
 
 if res.get_stories_200_application_json_integers is not None:
     # handle response
+    pass
 ```
 
 
