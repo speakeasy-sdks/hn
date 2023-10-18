@@ -7,13 +7,11 @@ from ..shared import story as shared_story
 from typing import Optional
 
 
-
 @dataclasses.dataclass
 class GetItemRequest:
     item_id: int = dataclasses.field(metadata={'path_param': { 'field_name': 'item_id', 'style': 'simple', 'explode': False }})
     r"""Numeric ID of the item to get"""
     
-
 
 
 

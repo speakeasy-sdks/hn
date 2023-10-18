@@ -7,13 +7,11 @@ from ..shared import user as shared_user
 from typing import Optional
 
 
-
 @dataclasses.dataclass
 class GetUserRequest:
     id: int = dataclasses.field(metadata={'path_param': { 'field_name': 'id', 'style': 'simple', 'explode': False }})
     r"""Numeric ID of the user to get"""
     
-
 
 
 
