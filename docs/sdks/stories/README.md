@@ -1,5 +1,5 @@
 # Stories
-(*stories*)
+(*.stories*)
 
 ### Available Operations
 
@@ -50,13 +50,12 @@ Get latest story IDs
 ```python
 import test
 
-
 s = test.Test()
 
 
 res = s.stories.get_stories()
 
-if res.get_stories_200_application_json_integers is not None:
+if res.integers is not None:
     # handle response
     pass
 ```

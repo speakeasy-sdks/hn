@@ -12,7 +12,7 @@ class GetStoriesResponse:
     r"""HTTP response content type for this operation"""
     status_code: int = dataclasses.field()
     r"""HTTP response status code for this operation"""
-    get_stories_200_application_json_integers: Optional[List[int]] = dataclasses.field(default=None)
+    integers: Optional[List[int]] = dataclasses.field(default=None)
     r"""Ok"""
     raw_response: Optional[requests_http.Response] = dataclasses.field(default=None)
     r"""Raw HTTP response; suitable for custom response parsing"""

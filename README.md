@@ -32,12 +32,12 @@ if res.story is not None:
 ## Available Resources and Operations
 
 
-### [stories](docs/sdks/stories/README.md)
+### [.stories](docs/sdks/stories/README.md)
 
 * [get_item](docs/sdks/stories/README.md#get_item) - Get User Details
 * [get_stories](docs/sdks/stories/README.md#get_stories) - Get latest story IDs
 
-### [users](docs/sdks/users/README.md)
+### [.users](docs/sdks/users/README.md)
 
 * [get_user](docs/sdks/users/README.md#get_user) - Get User Details
 <!-- End SDK Available Operations -->
@@ -66,8 +66,6 @@ Here's an example of one such pagination call:
 # Error Handling
 
 Handling errors in your SDK should largely match your expectations.  All operations return a response object or raise an error.  If Error objects are specified in your OpenAPI Spec, the SDK will raise the appropriate Error type.
-
-
 <!-- End Error Handling -->
 
 
@@ -85,13 +83,12 @@ You can override the default server globally by passing a server index to the `s
 
 For example:
 
-
 ```python
 import test
 from test.models import operations
 
 s = test.Test(
-    server_idx=0
+    server_idx=0,
 )
 
 req = operations.GetItemRequest(
@@ -110,13 +107,12 @@ if res.story is not None:
 
 The default server can also be overridden globally by passing a URL to the `server_url: str` optional parameter when initializing the SDK client instance. For example:
 
-
 ```python
 import test
 from test.models import operations
 
 s = test.Test(
-    server_url="https://hacker-news.firebaseio.com/v0"
+    server_url="https://hacker-news.firebaseio.com/v0",
 )
 
 req = operations.GetItemRequest(
@@ -149,8 +145,6 @@ http_client = requests.Session()
 http_client.headers.update({'x-custom-header': 'someValue'})
 s = test.Test(client: http_client)
 ```
-
-
 <!-- End Custom HTTP Client -->
 
 <!-- Placeholder for Future Speakeasy SDK Sections -->
