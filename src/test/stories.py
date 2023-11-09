@@ -12,6 +12,7 @@ class Stories:
         self.sdk_configuration = sdk_config
         
     
+    
     def get_item(self, request: operations.GetItemRequest) -> operations.GetItemResponse:
         r"""Get User Details
         Get User Details
@@ -41,6 +42,7 @@ class Stories:
 
         return res
 
+    
     
     def get_stories(self) -> operations.GetStoriesResponse:
         r"""Get latest story IDs

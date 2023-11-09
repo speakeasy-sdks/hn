@@ -12,6 +12,7 @@ class Users:
         self.sdk_configuration = sdk_config
         
     
+    
     def get_user(self, request: operations.GetUserRequest) -> operations.GetUserResponse:
         r"""Get User Details
         Get User Details

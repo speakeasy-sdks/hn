@@ -32,12 +32,12 @@ if res.story is not None:
 ## Available Resources and Operations
 
 
-### [.stories](docs/sdks/stories/README.md)
+### [stories](docs/sdks/stories/README.md)
 
 * [get_item](docs/sdks/stories/README.md#get_item) - Get User Details
 * [get_stories](docs/sdks/stories/README.md#get_stories) - Get latest story IDs
 
-### [.users](docs/sdks/users/README.md)
+### [users](docs/sdks/users/README.md)
 
 * [get_user](docs/sdks/users/README.md#get_user) - Get User Details
 <!-- End SDK Available Operations -->
@@ -65,7 +65,37 @@ Here's an example of one such pagination call:
 <!-- Start Error Handling -->
 # Error Handling
 
-Handling errors in your SDK should largely match your expectations.  All operations return a response object or raise an error.  If Error objects are specified in your OpenAPI Spec, the SDK will raise the appropriate Error type.
+Handling errors in this SDK should largely match your expectations.  All operations return a response object or raise an error.  If Error objects are specified in your OpenAPI Spec, the SDK will raise the appropriate Error type.
+
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
+
+
+## Example
+
+```python
+import test
+from test.models import operations
+
+s = test.Test()
+
+req = operations.GetItemRequest(
+    item_id=454948,
+)
+
+res = None
+try:
+    res = s.stories.get_item(req)
+
+except (errors.SDKError) as e:
+    print(e) # handle exception
+
+
+if res.story is not None:
+    # handle response
+    pass
+```
 <!-- End Error Handling -->
 
 
@@ -135,7 +165,7 @@ if res.story is not None:
 The Python SDK makes API calls using the (requests)[https://pypi.org/project/requests/] HTTP library.  In order to provide a convenient way to configure timeouts, cookies, proxies, custom headers, and other low-level configuration, you can initialize the SDK client with a custom `requests.Session` object.
 
 
-For example, you could specify a header for every request that your sdk makes as follows:
+For example, you could specify a header for every request that this sdk makes as follows:
 
 ```python
 import test

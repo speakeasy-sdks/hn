@@ -1,5 +1,5 @@
 # Stories
-(*.stories*)
+(*stories*)
 
 ### Available Operations
 
@@ -39,7 +39,11 @@ if res.story is not None:
 ### Response
 
 **[operations.GetItemResponse](../../models/operations/getitemresponse.md)**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## get_stories
 
@@ -64,4 +68,8 @@ if res.integers is not None:
 ### Response
 
 **[operations.GetStoriesResponse](../../models/operations/getstoriesresponse.md)**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
