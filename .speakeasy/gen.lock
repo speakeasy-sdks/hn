@@ -1,0 +1,50 @@
+lockVersion: 2.0.0
+id: 4c904769-483c-45d8-b4ae-3c815185441e
+management:
+  docChecksum: 17bc9e16bedd16c93cd8796062c34da4
+  docVersion: 1.0.0
+  speakeasyVersion: internal
+  generationVersion: 2.225.2
+  releaseVersion: 3.1.1
+  configChecksum: 10e0823d8c7add066812c72900915d16
+  repoURL: https://github.com/speakeasy-sdks/hn.git
+  repoSubDirectory: .
+  installationURL: https://github.com/speakeasy-sdks/hn.git
+features:
+  python:
+    core: 4.4.0
+    globalServerURLs: 2.82.1
+generatedFiles:
+  - src/test/sdkconfiguration.py
+  - src/test/stories.py
+  - src/test/users.py
+  - src/test/sdk.py
+  - pylintrc
+  - setup.py
+  - src/test/__init__.py
+  - src/test/utils/__init__.py
+  - src/test/utils/retries.py
+  - src/test/utils/utils.py
+  - src/test/models/errors/sdkerror.py
+  - tests/helpers.py
+  - src/test/models/operations/getitem.py
+  - src/test/models/operations/getstories.py
+  - src/test/models/operations/getuser.py
+  - src/test/models/shared/story.py
+  - src/test/models/shared/user.py
+  - src/test/models/__init__.py
+  - src/test/models/errors/__init__.py
+  - src/test/models/operations/__init__.py
+  - src/test/models/shared/__init__.py
+  - docs/models/operations/getitemrequest.md
+  - docs/models/operations/getitemresponse.md
+  - docs/models/operations/getstoriesresponse.md
+  - docs/models/operations/getuserrequest.md
+  - docs/models/operations/getuserresponse.md
+  - docs/models/shared/story.md
+  - docs/models/shared/user.md
+  - docs/sdks/test/README.md
+  - docs/sdks/stories/README.md
+  - docs/sdks/users/README.md
+  - USAGE.md
+  - .gitattributes
