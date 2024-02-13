@@ -63,7 +63,7 @@ Handling errors in this SDK should largely match your expectations.  All operati
 
 ```python
 import test
-from test.models import operations
+from test.models import errors, operations
 
 s = test.Test()
 
@@ -75,7 +75,7 @@ res = None
 try:
     res = s.stories.get_item(req)
 except errors.SDKError as e:
-    print(e)  # handle exception
+    # handle exception
     raise(e)
 
 if res.story is not None:

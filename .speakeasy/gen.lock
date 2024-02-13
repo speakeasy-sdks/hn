@@ -4,7 +4,7 @@ management:
   docChecksum: 17bc9e16bedd16c93cd8796062c34da4
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.250.12
+  generationVersion: 2.253.0
   releaseVersion: 5.0.0
   configChecksum: 13a7d9a91e30f453d87624164371b540
   repoURL: https://github.com/speakeasy-sdks/hn.git
