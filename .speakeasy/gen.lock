@@ -4,15 +4,15 @@ management:
   docChecksum: 17bc9e16bedd16c93cd8796062c34da4
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.272.4
-  releaseVersion: 5.0.1
-  configChecksum: f0b5e166baa9552ebd762ca7794356e0
+  generationVersion: 2.275.4
+  releaseVersion: 5.1.0
+  configChecksum: 1b9b16f700a428e67a5a79eb71ce9973
   repoURL: https://github.com/speakeasy-sdks/hn.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/hn.git
 features:
   python:
-    core: 4.4.7
+    core: 4.5.0
     globalServerURLs: 2.82.1
 generatedFiles:
   - src/test/sdkconfiguration.py
@@ -48,3 +48,6 @@ generatedFiles:
   - docs/sdks/users/README.md
   - USAGE.md
   - .gitattributes
+  - src/test/_hooks/sdkhooks.py
+  - src/test/_hooks/types.py
+  - src/test/_hooks/__init__.py
