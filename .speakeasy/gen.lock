@@ -3,22 +3,24 @@ id: 4c904769-483c-45d8-b4ae-3c815185441e
 management:
   docChecksum: 17bc9e16bedd16c93cd8796062c34da4
   docVersion: 1.0.0
-  speakeasyVersion: internal
-  generationVersion: 2.275.4
-  releaseVersion: 5.1.0
-  configChecksum: 1b9b16f700a428e67a5a79eb71ce9973
+  speakeasyVersion: 1.204.1
+  generationVersion: 2.279.1
+  releaseVersion: 5.2.0
+  configChecksum: 482c6331af548959db79818c59379e87
   repoURL: https://github.com/speakeasy-sdks/hn.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/hn.git
 features:
   python:
-    core: 4.5.0
+    core: 4.5.1
     globalServerURLs: 2.82.1
+    responseFormat: 0.1.0
 generatedFiles:
   - src/test/sdkconfiguration.py
   - src/test/stories.py
   - src/test/users.py
   - src/test/sdk.py
+  - py.typed
   - pylintrc
   - setup.py
   - src/test/__init__.py
